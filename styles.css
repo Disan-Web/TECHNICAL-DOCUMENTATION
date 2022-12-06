@@ -1,0 +1,80 @@
+html,
+body{
+  line-height: 1.5;
+  background-color: white;
+  color: brown;
+  min-width: 250px;
+}
+#navbar{
+  position: fixed;
+  min-width: 250px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgb(0, 25, 25, 0.5)
+}
+#navbar ul{
+  height: 75%;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#navbar li{
+  border-top: 2px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a{
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+}
+
+#main-doc{
+  position: absolute;
+  padding: 30px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+section article{
+  margin: 20px;font-size: 0.98em;
+  color: #4d4e53;
+}
+
+@media only screen and (max-width: 900px){
+  /* For mobile phones */
+  #navbar ul{
+    border: 2px;
+    height: 200px;
+  }
+  #navbar{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid;
+    border: none;
+    max-height: 285px;
+    background-color: white;
+  }
+  #main-doc{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 250px;
+  }  
+}
+.main-section{
+  color: black;
+  font: monospace;
+}
+header{
+  font-size: 25px;
+}
+
